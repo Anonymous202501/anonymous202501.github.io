@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="character animation, humanoid, human-object interaction, reinforcement learning, manipulation, basketball">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning Robust and Generalizable Interaction Skills from Sparse and Noisy Demonstrations</title>
+  <link rel="icon" href="static/images/basketball_icon.svg" type="image/svg+xml">
+
+   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="https://kit.fontawesome.com/d383128d10.js" crossorigin="anonymous"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <script type="importmap">
+    {
+      "imports": {
+        "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js",
+        "three": "https://unpkg.com/three@0.127.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.127.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KC36P9N5PB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KC36P9N5PB');
+</script>
+
+
+<body>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><img src="static/images/basketball_icon.png" style="height: 60px; margin-bottom: -3px;">Learning Robust and Generalizable Interaction Skills from Sparse and Noisy Demonstrations</h1>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Teaser -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <!-- <h2 class="title is-3"><span class="dnerf">AnySkill</span> model</h2> -->
+          <div class="content has-text-justified">
+            <img src="./static/images/page_teaser.png"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End teaser -->
+
+
+<!-- Paper abstract -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              We address a fundamental challenge in Reinforcement Learning from Interaction Demonstration (RLID): demonstration noise and coverage limitations. While existing data collection approaches provide valuable interaction demonstrations, they often yield sparse, disconnected, and noisy trajectories that fail to capture the full spectrum of possible skill variations and transitions. Our key insight is that despite noisy and sparse demonstrations, there exist infinite physically feasible trajectories that naturally bridge between demonstrated skills or emerge from their neighboring states, forming a continuous space of possible skill variations and transitions. Building upon this insight, we present two data augmentation techniques: a Stitched Trajectory Graph (STG) that discovers potential transitions between demonstration skills, and a State Transition Field (STF) that establishes unique connections for arbitrary states within the demonstration neighborhood. To enable effective RLID with augmented data, we develop an Adaptive Trajectory Sampling (ATS) strategy for dynamic curriculum generation and a historical encoding mechanism for memory-dependent skill learning. Our approach enables robust skill acquisition that significantly generalizes beyond the reference demonstrations. Extensive experiments across diverse interaction tasks demonstrate substantial improvements over state-of-the-art methods in terms of convergence stability, generalization capability, and recovery robustness.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Poster -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-centered">
+            <h2 class="title is-3">Motivation - Demonstration Sparsity</h2>
+            <img src="./static/images/sm2_motivation.png"/>
+            <p>
+              Given reference trajectories of shooting and dribbling, there should exist natural transitions between them and countless recovery strategies for potential errors. However, such variations are often missing in collected data. Can we learn such diversities from sparse demonstrations?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End poster -->
+
+<!-- Poster -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-centered">
+            <h2 class="title is-3">Motivation - Demonstration Noise</h2>
+            <img src="./static/images/sm2_motivation2.png"/>
+            <p>
+              Imitation from Interaction data can be highly sensitive to data degradation - even minor errors in a cup-grasping demonstration may lead to failure in imitation learning. For such noisy demonstrations, there must exist ideal trajectories. These optimal solutions are likely diverse and reside within some neighborhood of the original noisy demonstrations.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End poster -->
+
+<!-- Poster -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <div class="content has-text-centered">
+            <h2 class="title is-3">Method Overview</h2>
+            <img src="./static/images/page_framework.png"/>
+            <p>
+              Given sparse and noisy demonstrations (e.g., two short trajectories of Shot and Dribble), there exist infinite valid but uncaptured trajectories that can either bridge between them or emerge from their neighboring states (illustrated by question marks). Our method discovers and learns these potential trajectories through three key steps: (1) constructing a Stitched Trajectory Graph (STG) to identify possible transitions between demonstrations, (2) expanding STG into a State Transition Field (STF) that establishes connections for arbitrary states within the demonstration neighborhood, and (3) learning a skill policy via Adaptive Trajectory Sampling (ATS) and Reinforcement Learning from Interaction Demonstrations (RLID). This enables robust skill transition and generalization far beyond the original sparse demonstrations which contain no instances of skill transitions or error recovery patterns.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End poster -->
+
+<!-- Small video carousel -->
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <h2 class="title is-2" style="text-align: center;"> Results: Skill Recovery Patterns </h2>
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel" style="text-align: center;">
+        <!--  -->
+        <div class="publication-banner video">
+          <div class="video-caption" style="margin-bottom: 10px;">
+            Shot
+          </div>
+          <video poster="" id="jumpshot" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/sm2_robust_shot.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <!--  -->
+        <div class="publication-banner video">
+          <div class="video-caption" style="margin-bottom: 10px;">
+            Dribble Forward
+          </div>
+          <video poster="" id="turnaroundlayup" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/sm2_robust_df.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <!--  -->
+        <div class="publication-banner video">
+          <div class="video-caption" style="margin-bottom: 10px;">
+            Book Retrieval
+          </div>
+          <video poster="" id="layup" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/sm2_robust_book.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <!--  -->
+        <div class="publication-banner video">
+          <div class="video-caption" style="margin-bottom: 10px;">
+            Getup
+          </div>
+          <video poster="" id="rebound" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/sm2_robust_getup.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <!--  -->
+        <div class="publication-banner video">
+          <div class="video-caption" style="margin-bottom: 10px;">
+            Run
+          </div>
+          <video poster="" id="lrun" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/sm2_robust_run.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End small video carousel-->
+
+<!-- Robustness  -->
+<section class="section">
+  <div class="container">
+    <h2 class="title is-2" style="text-align: center;"> Results: Skill Generalization </h2>
+    <div class="columns is-centered">
+      <div class="column is-one-fifths is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./static/videos/sm2_skill_transition.mp4" poster="./static/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p> Zero-Shot Skill Transitions </p>
+      </div>
+      <div class="column is-one-fifths is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./static/videos/sm2_generalize_book.mp4" poster="./static/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p> One-Shot Book Retrieval </p>
+      </div>
+      <div class="column is-one-fifths is-centered has-text-centered">
+        <video controls autoplay loop muted playsinline src="./static/videos/sm2_generalize_book.mp4" poster="./static/loading-icon.gif" style="border: 1px solid #bbb; border-radius: 10px; margin: 1.0%;"></video>
+        <p> Zero-Shot Cube Reorientation </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Robustness  -->
+
+<!-- Small video carousel -->
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <h2 class="title is-2" style="text-align: center;"> More Learned Skills </h2>
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel" style="text-align: center;">
+        <!--  -->
+        <div class="publication-banner video">
+          <div class="video-caption" style="margin-bottom: 10px;">
+            Pour-Kettle-Cup
+          </div>
+          <video poster="" id="jumpshot" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/sm2_place_pan.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <!--  -->
+        <div class="publication-banner video">
+          <div class="video-caption" style="margin-bottom: 10px;">
+            Place-Kettle
+          </div>
+          <video poster="" id="turnaroundlayup" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/sm2_place_kettle.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <!--  -->
+        <div class="publication-banner video">
+          <div class="video-caption" style="margin-bottom: 10px;">
+            Stand-Chair
+          </div>
+          <video poster="" id="layup" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/sm2_stand_chair.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <!--  -->
+        <div class="publication-banner video">
+          <div class="video-caption" style="margin-bottom: 10px;">
+            Drink-Cup
+          </div>
+          <video poster="" id="rebound" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/sm2_drink_cup.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <!--  -->
+        <div class="publication-banner video">
+          <div class="video-caption" style="margin-bottom: 10px;">
+            Place-Pan
+          </div>
+          <video poster="" id="lrun" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/sm2_place_pan.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End small video carousel-->
+
+
+<script src="./animate.js" type="module"></script>
+
+
+</body>
+</html>
